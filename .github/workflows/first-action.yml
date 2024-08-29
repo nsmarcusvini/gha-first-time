@@ -1,0 +1,13 @@
+# Sempre primeiro definir o nome do workflow
+name: First Workflow
+# quando sera executado
+on: workflow_dispatch # Significa que pode ser acionado de forma manual
+jobs: 
+  first-job:
+  # Definir o ambiente a seguir
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello-world
+        run: echo "Hello World!"
+      - name: Print good bye
+        run: echo "Okay, Bye !!"
